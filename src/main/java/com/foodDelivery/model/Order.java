@@ -75,8 +75,8 @@ public class Order {
     public void setCustomerPhone(String customerPhone){
         this.customerPhone = customerPhone;
     }
-    public String getDeliveryAddress() { return customerAddress; }
-    public void setDeliveryAddress(String deliveryAddress) { this.customerAddress = customerAddress; }
+    public String getCustomerAddress() { return customerAddress; }
+    public void setCustomerAddress(String customerAddress) { this.customerAddress = customerAddress; }
 
     public List<OrderItem> getItems() { return items; }
     public void setItems(List<OrderItem> items) { this.items = items; }

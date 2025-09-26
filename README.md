@@ -1,10 +1,10 @@
-### Food Delivery Management System
+# Food Delivery Management System
 - A comprehensive Java-based food delivery management system built with Maven, 
 - featuring menu management, order processing, delivery tracking, and admin functionality.
 
 ## features
 
-# functionality
+### functionality
 
 - Menu Management: Browse, add, update, and delete menu items
 - Order Processing: Complete order lifecycle from placement to delivery
@@ -12,13 +12,13 @@
 - Inventory Management: Stock level tracking and availability status
 - Receipt Generation: Automated receipt creation for orders
 
-# User Roles
+### User Roles
 
 - Customers: Browse menu, place orders, track deliveries
 - Administrators: Manage menu, orders, deliveries, and view reports
 - Delivery Drivers: Update delivery status and track assignments
 
-# Technology used
+### Technology used
 
 - java 21
 - Apache Maven
@@ -28,12 +28,12 @@
 
 ## installation 
 
-# Prerequisites
+### Prerequisites
 
 - java 21 
 - Apache Maven 3.6+
 - Git
 
-# clone the repository 
+### clone the repository 
 - git clone git@github.com:Boikhutso7/food-delivery-management-system.git
 - cd food-delivery-management-system

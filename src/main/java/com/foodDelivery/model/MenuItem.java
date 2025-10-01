@@ -11,6 +11,8 @@ public class MenuItem {
     private int stockQuantity;
     private BigDecimal price;
 
+    public MenuItem(){}
+
     public MenuItem(String name, String description, String category, BigDecimal price){
                 this.name = name;
                 this.description = description;
@@ -64,6 +66,6 @@ public class MenuItem {
     }
     @Override
     public String toString(){
-        return  String.format("%s - $%.2f (%s)", name , price, category);
+        return  String.format("%s - R%.2f (%s)", name , price, category);
     }
 }

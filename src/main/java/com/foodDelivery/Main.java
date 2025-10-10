@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Initializing database...");
 
         // Initialize database
-        DatabaseConnection.initializeDatabase();
+        DatabaseConnection.startDatabase();
 
         // Add sample data if needed
         initializeSampleData();

@@ -72,6 +72,7 @@ public class DatabaseConnection {
                         )
                     """;
 
+
             conn.createStatement().execute(createMenuTable);
             conn.createStatement().execute(createOrdersTable);
             conn.createStatement().execute(createOrderItemsTable);

@@ -23,7 +23,7 @@ public class DatabaseConnection {
 
             String createMenuTable = """
                     CREATE TABLE IF NOT EXISTS menu_items(
-                        id INTEGER PRIMARY KEY AUTOINCREMENT;
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
                         name TEXT NOT NULL,
                         description TEXT,
                         price DECIMAL(10,2) NOT NULL,
@@ -54,7 +54,7 @@ public class DatabaseConnection {
                         quantity INTEGER NOT NULL,
                         price DECIMAL(10,2) NOT NULL,
                         FOREIGN KEY (order_id) REFERENCES orders(id),
-                        FOREIGN KEY (menu_item-id) REFERENCES menu_items(id)
+                        FOREIGN KEY (menu_item_id) REFERENCES menu_items(id)
                         )
                     """;
             String createDeliveriesTable = """

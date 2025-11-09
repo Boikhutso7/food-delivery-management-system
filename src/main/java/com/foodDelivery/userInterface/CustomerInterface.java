@@ -57,7 +57,7 @@ public class CustomerInterface {
             System.out.println("\n--- " + category.toUpperCase() + " ---");
             List<MenuItem> items = menuItemService.getMenuItemsByCategory(category);
             for (MenuItem item : items) {
-                System.out.printf("%d. %s - $%.2f\n", item.getId(), item.getName(), item.getPrice());
+                System.out.printf("%d. %s - R%.2f\n", item.getId(), item.getName(), item.getPrice());
                 System.out.println("   " + item.getDescription());
                 if (!item.isAvailable()) {
                     System.out.println("   [Currently Unavailable]");
@@ -107,10 +107,10 @@ public class CustomerInterface {
                 System.out.println("  No items added yet.");
             } else {
                 for (Order.OrderItem item : currentOrder.getItems()) {
-                    System.out.printf("  %s x%d - $%.2f\n",
+                    System.out.printf("  %s x%d - R%.2f\n",
                             item.getMenuItem().getName(), item.getQuantity(), item.getSubtotal());
                 }
-                System.out.printf("Current Total: $%.2f\n", currentOrder.getTotalAmount());
+                System.out.printf("Current Total: R%.2f\n", currentOrder.getTotalAmount());
             }
 
             System.out.println("\n1. Add item to order");
@@ -185,7 +185,7 @@ public class CustomerInterface {
             System.out.println("\n=== ORDER TRACKING ===");
             System.out.println("Order ID: " + order.getId());
             System.out.println("Status: " + order.getStatus().getDisplayName());
-            System.out.println("Total: $" + order.getTotalAmount());
+            System.out.println("Total: R" + order.getTotalAmount());
 
             if (order.getEstimatedDelivery() != null) {
                 System.out.println("Estimated Delivery: " +
